@@ -24,7 +24,7 @@ export const db = new pg.Pool({
   connectionString: dbConnectionString,
 });
 
-const PORT = "https://week4-assignment-guestbook-ntbd.onrender.com";
+const PORT = 8080;
 app.listen(PORT, function () {
   console.log(`server is ready and running in PORT ${PORT}`);
 });

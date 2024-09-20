@@ -21,7 +21,7 @@ function handleSubmit(event) {
 
   console.log(formValues);
 
-  fetch("https://week4-assignment-guestbook-ntbd.onrender.com", {
+  fetch("https://week4-assignment-guestbook-ntbd.onrender.com/add", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
