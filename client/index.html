@@ -9,8 +9,63 @@
 
     <title>Guestbook</title>
   </head>
+  <h1>Hotel Panem Guestbook</h1>
   <body>
     <!--collect user data
 conatainer to dispaly user feedabck ** remeber the name attribute-->
+    <form id="form">
+      <label for="name"> Name </label>
+      <input
+        type="text"
+        name="name"
+        id="name input"
+        placeholder="Write your Name"
+        required
+      />
+      <button type="submit">Submit</button>
+
+      <label for="location"> Room Name </label>
+      <input
+        type="text"
+        name="location"
+        id="location input"
+        placeholder="Write your room name"
+        required
+      />
+      <button type="submit">Submit</button>
+
+      <label for="check-in"> Check-in </label>
+      <input
+        type="date"
+        name="check-in"
+        id="check-in input"
+        placeholder="Check-in Date"
+        required
+      />
+      <button type="submit">Submit</button>
+
+      <label for="check-out"> Check-out </label>
+      <input
+        type="date"
+        name="check-out"
+        id="check-out input"
+        placeholder="Check-out Date"
+        required
+      />
+      <button type="submit">Submit</button>
+
+      <label for="review"> Review </label>
+      <input
+        type="text"
+        name="review"
+        id="review input"
+        placeholder="Write your review"
+        required
+      />
+      <button type="submit">Submit</button>
+    </form>
+    <section id="feedback-container">
+      <p>Feedback</p>
+    </section>
   </body>
 </html>

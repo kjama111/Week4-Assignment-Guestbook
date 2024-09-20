@@ -1,3 +1,7 @@
 /* CSS rest */
 
 /* media queries for at leat mobile and desktop screens */
+
+* {
+  background-color: rgb(145, 206, 186);
+}

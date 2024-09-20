@@ -1,3 +1,5 @@
+console.log("test");
+
 //DOM manipulation
 //select FORM
 
@@ -7,7 +9,31 @@
 // - a ForData object template
 // - get formValue to insert them into FormData object
 
+const form = document.querySelector("form");
+
+function handleSubmit(event) {
+  event.preventDefault();
+
+  const formData = new FormData(form);
+
+  const formValues = Object.fromEntries(formData);
+  //   const formValues = formData.get("");
+
+  console.log(formValues);
+
+  fetch("https://week4-assignment-guestbook-ntbd.onrender.com", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({ formValues }),
+  });
+}
+
+form.addEventListener("submit", handleSubmit);
+
 // - fetch the CREATE endpoint to send formValues to server
+
 // fetch("localhost-url/endpoint"), {
 
 //     method:
@@ -15,23 +41,14 @@
 //     body:
 // }
 
-
-
-//2. event listener --> Submit button
-
-
-
-
-
 //select feedback container
 //1.fetch READ endpoint to have access to data
 //2. fetch urls
 //3. parse response into json
 //4. wrangle data if nessary
 
-
-dataDatabase.forEach(item) => {
+// dataDatabase.forEach(item) => {
 //create DOM elements to contain data
 //
 
-});
+// });
