@@ -24,11 +24,12 @@ export const db = new pg.Pool({
   connectionString: dbConnectionString,
 });
 
-const PORT = 8080;
-// "https://week4-assignment-guestbook-ntbd.onrender.com"
+const PORT = "https://week4-assignment-guestbook-ntbd.onrender.com";
 app.listen(PORT, function () {
   console.log(`server is ready and running in PORT ${PORT}`);
 });
+
+//set up root route
 
 app.get("/", function (request, response) {
   response.json({ message: "You are looking at my root route!" });
@@ -46,7 +47,6 @@ app.post("/add", function (request, response) {
   console.log(bodyData);
   response.json({ message: "Body data received!", form: `${bodyData.form}` });
 });
-//set up root route
 
 //=====================================
 // in.env i need database connection string with correct password
