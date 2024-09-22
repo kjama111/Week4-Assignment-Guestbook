@@ -35,13 +35,13 @@ app.get("/", function (request, response) {
   response.json({ message: "You are looking at my root route!" });
 });
 
-app.get("/add-guests", async (request, response) => {
-  const query = await db.query(`SELECT * FROM guests`);
+app.get("/add", async (request, response) => {
+  const query = await db.query(`SELECT * FROM panem`);
   response.json(query.rows);
   console.log(query);
 });
 
-app.post("/add-guests", function (request, response) {
+app.post("/panem", function (request, response) {
   const bodyData = request.body;
 
   console.log(bodyData);
