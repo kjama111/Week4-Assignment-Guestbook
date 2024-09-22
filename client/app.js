@@ -21,6 +21,8 @@ function handleSubmit(event) {
 
   console.log(formValues);
 
+  // - fetch the CREATE endpoint to send formValues to server
+
   fetch("https://week4-assignment-guestbook-ntbd.onrender.com/add", {
     method: "POST",
     headers: {
@@ -32,20 +34,19 @@ function handleSubmit(event) {
 
 form.addEventListener("submit", handleSubmit);
 
-// - fetch the CREATE endpoint to send formValues to server
-
-// fetch("localhost-url/endpoint"), {
-
-//     method:
-//     headers:
-//     body:
-// }
-
 //select feedback container
 //1.fetch READ endpoint to have access to data
 //2. fetch urls
 //3. parse response into json
 //4. wrangle data if nessary
+
+// fetch("http://localhost:8080/add-guests"), {
+// method: "POST",
+//    headers: {
+//      "Content-Type": "application/json",
+//    },
+//    body: JSON.stringify({ formValues }),
+//  });
 
 // dataDatabase.forEach(item) => {
 //create DOM elements to contain data

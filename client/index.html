@@ -11,61 +11,103 @@
   </head>
   <h1>Hotel Panem Guestbook</h1>
   <body>
-    <!--collect user data
-conatainer to dispaly user feedabck ** remeber the name attribute-->
-    <form id="form">
-      <label for="name"> Name </label>
-      <input
-        type="text"
-        name="name"
-        id="name input"
-        placeholder="Write your Name"
-        required
-      />
-      <button type="submit">Submit</button>
+    <div id="form-container">
+      <form id="form">
+        <label for="name"> Name </label>
+        <input
+          type="text"
+          name="name"
+          id="name input"
+          placeholder="Write your Name"
+          required
+        />
+        <button type="submit">Submit</button>
 
-      <label for="location"> Room Name </label>
-      <input
-        type="text"
-        name="location"
-        id="location input"
-        placeholder="Write your room name"
-        required
-      />
-      <button type="submit">Submit</button>
+        <label for="location"> Room Name </label>
+        <input
+          type="text"
+          name="location"
+          id="location input"
+          placeholder="Write your room name"
+          required
+        />
+        <button type="submit">Submit</button>
 
-      <label for="check-in"> Check-in </label>
-      <input
-        type="date"
-        name="check-in"
-        id="check-in input"
-        placeholder="Check-in Date"
-        required
-      />
-      <button type="submit">Submit</button>
+        <label for="check-in"> Check-in </label>
+        <input
+          type="date"
+          name="check-in"
+          id="check-in input"
+          placeholder="Check-in Date"
+          required
+        />
+        <button type="submit">Submit</button>
 
-      <label for="check-out"> Check-out </label>
-      <input
-        type="date"
-        name="check-out"
-        id="check-out input"
-        placeholder="Check-out Date"
-        required
-      />
-      <button type="submit">Submit</button>
+        <label for="check-out"> Check-out </label>
+        <input
+          type="date"
+          name="check-out"
+          id="check-out input"
+          placeholder="Check-out Date"
+          required
+        />
+        <button type="submit">Submit</button>
 
-      <label for="review"> Review </label>
-      <input
-        type="text"
-        name="review"
-        id="review input"
-        placeholder="Write your review"
-        required
-      />
-      <button type="submit">Submit</button>
-    </form>
-    <section id="feedback-container">
-      <p>Feedback</p>
+        <label for="review"> Review </label>
+        <input
+          type="text"
+          name="review"
+          id="review input"
+          placeholder="Write your review"
+          required
+        />
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+
+    <section>
+      <marquee id="mark"> Come and Visit Hotel Panem </marquee>
     </section>
+
+    <div id="feedback-container">
+      <h3>Feedback</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Room Name</th>
+            <th>Check-in</th>
+            <th>Check-out</th>
+            <th>Review</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Samantha</td>
+            <td>Serenity</td>
+            <td>21/04/2023</td>
+            <td>24/04/2023</td>
+            <td>Beautiful room and scenery with amazing amenities!</td>
+          </tr>
+          <tr>
+            <td>Motaz</td>
+            <td>Emerald</td>
+            <td>12/01/2023</td>
+            <td>20/01/2023</td>
+            <td>
+              Great room and superb food. Staff were proffessional and
+              welcoming. Will be coming back
+            </td>
+          </tr>
+          <tr>
+            <td>Jordan</td>
+            <td>Sapphire</td>
+            <td>24/11/2022</td>
+            <td>30/11/2022</td>
+            <td>Enjoyed every minute, will come back!</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
   </body>
 </html>

@@ -35,18 +35,15 @@ app.get("/", function (request, response) {
   response.json({ message: "You are looking at my root route!" });
 });
 
-app.get("/panem", async (request, response) => {
-  const query = db.query(`SELECT * FROM panem`);
+app.get("/add-guests", async (request, response) => {
+  const query = await db.query(`SELECT * FROM guests`);
   response.json(query.rows);
   console.log(query);
 });
 
-app.post("/add", function (request, response) {
+app.post("/add-guests", function (request, response) {
   const bodyData = request.body;
 
   console.log(bodyData);
   response.json({ message: "Body data received!", form: `${bodyData.form}` });
 });
-
-//=====================================
-// in.env i need database connection string with correct password
