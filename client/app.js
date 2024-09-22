@@ -23,7 +23,7 @@ function handleSubmit(event) {
 
   // - fetch the CREATE endpoint to send formValues to server
 
-  fetch("https://week4-assignment-guestbook-1-ycn9.onrender.com", {
+  fetch("https://week4-assignment-guestbook-1-ycn9.onrender/add", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
