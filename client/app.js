@@ -40,7 +40,7 @@ form.addEventListener("submit", handleSubmit);
 //3. parse response into json
 //4. wrangle data if nessary
 
-// fetch("http://localhost:8080/add-guests"), {
+// fetch("http://localhost:8080/add"), {
 // method: "POST",
 //    headers: {
 //      "Content-Type": "application/json",
